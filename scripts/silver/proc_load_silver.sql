@@ -1,6 +1,23 @@
--------------------------------------------------------
---Store Proceduer : Load Silver Layer (Source > Silver)
--------------------------------------------------------
+/*
+===============================================================================
+Stored Procedure: Load Silver Layer (Bronze -> Silver)
+===============================================================================
+Script Purpose:
+    This stored procedure performs the ETL (Extract, Transform, Load) process to 
+    populate the 'silver' schema tables from the 'bronze' schema.
+	Actions Performed:
+		- Truncates Silver tables.
+		- Inserts transformed and cleansed data from Bronze into Silver tables.
+		
+Parameters:
+    None. 
+	  This stored procedure does not accept any parameters or return any values.
+
+Usage Example:
+    EXEC Silver.load_silver;
+===============================================================================
+*/
+
 CREATE OR ALTER PROCEDURE silver.load_silver AS 
 BEGIN
 	DECLARE @start_time DATETIME,@end_time DATETIME, @batch_start_time DATETIME , @batch_end_time DATETIME;
@@ -71,7 +88,7 @@ BEGIN
 		SELECT
 			prd_id,
 			REPLACE(SUBSTRING(prd_key,1,5),'-','_') AS cat_id, -- Extract cat_id
-			SUBSTRING(prd_key,5,LEN(prd_key)) AS prd_key, --Extract prd_key
+			SUBSTRING(prd_key,7,LEN(prd_key)) AS prd_key, --Extract prd_key
 			prd_nm,
 			COALESCE(prd_cost,0) AS prd_cost, -- Fix Null values
 			CASE UPPER(TRIM(prd_line))  

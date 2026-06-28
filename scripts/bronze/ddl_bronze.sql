@@ -1,6 +1,13 @@
---------------------------------------
--- DDL Script: Create Bronze tables 
---------------------------------------
+/*
+===============================================================================
+DDL Script: Create Bronze Tables
+===============================================================================
+Script Purpose:
+    This script creates tables in the 'bronze' schema, dropping existing tables 
+    if they already exist.
+	  Run this script to re-define the DDL structure of 'bronze' Tables
+===============================================================================
+*/
 
 IF OBJECT_ID('bronze.crm_cust_info','U') IS NOT NULL
 	DROP TABLE bronze.crm_cust_info;
@@ -81,7 +88,6 @@ WITH(
 	FIELDTERMINATOR = ',',
 	TABLOCK 
 	);
-SELECT COUNT(*) FROM bronze.crm_cust_info;
 
 --2)bronze.crm_prd_info
 
@@ -94,8 +100,6 @@ WITH(
 	TABLOCK 
 	);
 
-SELECT *FROM bronze.crm_prd_info;
-SELECT COUNT(*) FROM bronze.crm_prd_info;
 
 --3)bronze.crm_sales_details
 
@@ -107,8 +111,7 @@ WITH(
 	FIELDTERMINATOR = ',',
 	TABLOCK 
 	);
-SELECT * FROM bronze.crm_sales_details;
-SELECT COUNT(*) FROM bronze.crm_sales_details;
+
 
 --4)bronze_erp_cust_az12
 
@@ -120,8 +123,7 @@ WITH(
 	FIELDTERMINATOR = ',',
 	TABLOCK 
 	);
-SELECT * FROM bronze.erp_cust_az12;
-SELECT COUNT(*) FROM bronze.erp_cust_az12;
+
 
 --5)bronze.erp_loc_a101
 
@@ -133,8 +135,6 @@ WITH(
 	FIELDTERMINATOR = ',',
 	TABLOCK 
 	);
-SELECT * FROM bronze.crm_sales_details;
-SELECT COUNT(*) FROM bronze.crm_sales_details;
 
 --6)bronze.erp_px_cat_g1v2
 
@@ -146,5 +146,3 @@ WITH(
 	FIELDTERMINATOR = ',',
 	TABLOCK 
 	);
-SELECT * FROM bronze.erp_px_cat_g1v2;
-SELECT COUNT(*) FROM bronze.erp_px_cat_g1v2;
