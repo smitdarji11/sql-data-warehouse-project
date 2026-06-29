@@ -19,6 +19,7 @@ The project covers the complete data warehousing process, including data ingesti
 ## 📂 Repository Structure
 
 
+```text
 sql-data-warehouse-project/
 │
 ├── datasets/                     # Source CSV files
@@ -38,7 +39,7 @@ sql-data-warehouse-project/
 │
 ├── LICENSE
 └── README.md
-
+```
 
 ## Objectives
 
@@ -73,6 +74,7 @@ Tools & Resources
 ## 🏗️ Data Warehouse Architecture
 
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
+
 ![Data Architecture] (docs/High Level Arcitecture.jpg)
 
 ● **Bronze Layer** – Stores raw data exactly as received from the source systems.
@@ -123,8 +125,12 @@ This project was built as part of my learning journey in Data Engineering and Da
 
 
 ## Screenshots
+
 ![DataFlow](docs/Data flow diagram.jpg)
+
 ![Data model](docs/data_model.jpg)
+
 ![Integration Diagram](docs/Integration Diagram.jpg)
+
 ![Architecture](docs/High Level Arcitecture.jpg)
 
