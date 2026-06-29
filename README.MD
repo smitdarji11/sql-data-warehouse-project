@@ -16,6 +16,30 @@ The project covers the complete data warehousing process, including data ingesti
 
  - [DataWithBaraa](https://github.com/DataWithBaraa/sql-data-warehouse-project/blob/92406686380cde6eca208c8b43e6fa40ecd26344/README.md)
 
+## 📂 Repository Structure
+
+
+sql-data-warehouse-project/
+│
+├── datasets/                     # Source CSV files
+│
+├── docs/                         # Project documentation and diagrams
+│   ├── Data flow diagram.jpg
+│   ├── data_model.jpg
+│   ├── High Level Architecture.jpg
+│   └── Integration Diagram.jpg
+│
+├── scripts/
+│   ├── bronze/                   # Bronze layer scripts (raw data ingestion)
+│   ├── silver/                   # Silver layer scripts (data cleansing & transformation)
+│   └── gold/                     # Gold layer scripts (business-ready data models)
+│
+├── tests/                        # Data quality checks and validation scripts
+│
+├── LICENSE
+└── README.md
+
+
 ## Objectives
 
 ➡️ Build a scalable SQL Data Warehouse from raw source data.
@@ -45,6 +69,7 @@ Tools & Resources
 ● **Notion**: Get the Project Template from Notion
 
 ● **Notion Project Steps**: Access to All Project Phases and Tasks.
+
 ## 🏗️ Data Warehouse Architecture
 
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
@@ -98,7 +123,6 @@ This project was built as part of my learning journey in Data Engineering and Da
 
 
 ## Screenshots
-
 ![DataFlow](docs/Data flow diagram.jpg)
 ![Data model](docs/data_model.jpg)
 ![Integration Diagram](docs/Integration Diagram.jpg)
