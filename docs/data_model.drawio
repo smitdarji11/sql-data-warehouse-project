@@ -1,9 +1,12 @@
 <mxfile host="Electron">
   <diagram name="Page-1" id="ZvECuVwW-_Z4MYSB-kWj">
-    <mxGraphModel dx="2570" dy="1147" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="2140" dy="860" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="mg4IWFybQtCpKIfEXxJL-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="370" x="30" y="50" as="geometry" />
+        </mxCell>
         <mxCell id="ixvtXtnfOX7SXAk2YgIS-3" parent="1" style="shape=table;startSize=40;container=1;collapsible=1;childLayout=tableLayout;fixedRows=1;rowLines=0;fontStyle=1;align=center;resizeLast=1;html=1;fillColor=light-dark(#FFFFFF,#6666FF);fontSize=19;rounded=1;fontFamily=Verdana;" value="gold_dim_customer" vertex="1">
           <mxGeometry height="310" width="270" x="-440" y="160" as="geometry" />
         </mxCell>
