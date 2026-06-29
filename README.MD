@@ -75,8 +75,6 @@ Tools & Resources
 
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
 
-![Data Architecture] (docs/hla.png)
-
 ● **Bronze Layer** – Stores raw data exactly as received from the source systems.
 
 ● **Silver Layer** – Cleans, validates, and transforms the raw data into structured datasets.
