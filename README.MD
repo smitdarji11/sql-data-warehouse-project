@@ -75,7 +75,7 @@ Tools & Resources
 
 The data architecture for this project follows Medallion Architecture Bronze, Silver, and Gold layers:
 
-![Data Architecture] (docs/High Level Arcitecture.jpg)
+![Data Architecture] (docs/High_Level _Architecture.png)
 
 ● **Bronze Layer** – Stores raw data exactly as received from the source systems.
 
@@ -126,11 +126,11 @@ This project was built as part of my learning journey in Data Engineering and Da
 
 ## Screenshots
 
-![DataFlow](docs/Data flow diagram.jpg)
+![DataFlow](docs/Data_flow_diagram.png)
 
-![Data model](docs/data_model.jpg)
+![Data model](docs/data_model.png)
 
-![Integration Diagram](docs/Integration Diagram.jpg)
+![Integration Diagram](docs/Integration_Diagram.png)
 
-![Architecture](docs/High Level Arcitecture.jpg)
+![Architecture](docs/High_Level _Architecture.png)
 
