@@ -132,5 +132,5 @@ This project was built as part of my learning journey in Data Engineering and Da
 
 ![Integration Diagram](docs/Integration_Diagram.png)
 
-![Architecture](docs/docs/High_Level _Architecture.png)
+![Architecture](docs/High_Level _Architecture.png)
 
